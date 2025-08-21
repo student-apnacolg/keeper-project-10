@@ -1,3 +1,5 @@
+import "../css/note.css"
+
 const Note = ({id, title, content, onDelete}) => {
   return (
     <div className="note">

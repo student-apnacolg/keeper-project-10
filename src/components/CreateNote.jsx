@@ -1,3 +1,5 @@
+import "../css/create.css"
+
 import React, { useState } from "react";
 
 const CreateNote = ({ onAdd }) => {
