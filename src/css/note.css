@@ -1,25 +1,34 @@
-.note {
+.titleBox {
   width: 100%;
-  padding: 1.5rem;
-  min-height: 10rem;
-  position: relative;
-  text-align: center;
-  white-space: normal;
-  background: #e9e9e9;
-  border-radius: .5rem;
-  word-wrap: break-word;
-  overflow: auto;
-  overflow-wrap: break-word;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 }
 
+.titleBox h2 {
+  flex: 1;
+}
+
+.note {
+  gap: .5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 1.5rem;
+  min-height: 10rem;
+  border-radius: .5rem;
+  background: #e9e9e9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note p {
+  flex: 1;
+}
 
 .deleteNote {
-  top: .4rem;
-  right: .4rem;
+  color: #FB2C36;
+  font-size: 1.5rem;
+  font-weight: 700;
   border: none;
   cursor: pointer;
-  position: absolute;
-  font-size: 1rem;
   background: none;
 }

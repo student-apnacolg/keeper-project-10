@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Note from "./components/Note";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CreateNote from "./components/CreateNote";
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(() => {
+    const savedNotes = localStorage.getItem("notes")
+    return savedNotes ? JSON.parse(savedNotes) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes))
+  }, [notes])
 
   const addNote = (note) => {
     if (!note.title || !note.content) {

@@ -1,14 +1,13 @@
-
 .header {
   width: 100%;
-  color: white;
   padding: .5rem;
+  color: white;
   text-align: center;
   background-color: #444;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }

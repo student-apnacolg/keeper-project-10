@@ -19,9 +19,9 @@
   gap: 1rem;
   width: 95%;
   display: grid;
-  padding: .5rem;
+  padding: 1rem;
   overflow-y: auto;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 }
 
